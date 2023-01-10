@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZR-Commerce</title>
+    <link rel="stylesheet" href="ZR-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="ZR logo.png">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                ZR<span>Commerce</span>
+            </div>
+            <ul>
+                <li><i class="fa-solid fa-house"></i>Home</li>
+                <li><i class="fa-solid fa-user"></i>User</li>
+                <li><i class="fa-solid fa-heart"></i>Favorites</li>
+            </ul>
+            <ul>
+                <li><i class="fa-brands fa-facebook"></i>Facebook</li>
+                <li><i class="fa-brands fa-instagram"></i>Instagram</li>
+                <li><i class="fa-brands fa-linkedin"></i>Linkedin</li>
+            </ul>
+        </div>
+        <div class="center">
+            <div class="search">
+                <div class="form">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">     
+                    <button>Search</button>
+                </div>
+            </div>
+            <h2>Products</h2>
+            <div class="list">
+                <div class="item" data-key="1">
+                    <div class="img">
+                        <img src="Adidas-Centennial-85-Low.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Adidas Centennial 85 low</div>
+                        <div class="price">149.99$</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add To Cart</button>
+                        <i class="fa-sharp fa-solid fa-heart"></i>
+                        <button class="remove" onclick="remove(1)"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+
+                    <div class="item" data-key="2">
+                        <div class="img">
+                            <img src="Adidas-super-star.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Adidas Super Star</div>
+                            <div class="price">199.99$</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Add To Cart</button>
+                            <i class="fa-sharp fa-solid fa-heart"></i>
+                            <button class="remove" onclick="remove(2)"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="3">
+                        <div class="img">
+                            <img src="Nike-Air-Force.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Nike Air Force 01</div>
+                            <div class="price">169.99$</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Add To Cart</button>
+                            <i class="fa-sharp fa-solid fa-heart"></i>
+                            <button class="remove" onclick="remove(3)"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="4">
+                        <div class="img">
+                            <img src="Air-Max-Plus.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Nike Air Max Plus</div>
+                            <div class="price">249.99$</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Add To Cart</button>
+                            <i class="fa-sharp fa-solid fa-heart"></i>
+                            <button class="remove" onclick="remove(4)"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </div>
+
+
+            </div>
+        </div>
+        <div class="cart">
+            <div class="name"><i class="fa-solid fa-cart-shopping"></i>Shopping Cart</div>
+            <div class="listcart"> 
+                    <h4><i class="fa-solid fa-money-bill"></i> Total Price : <span id="totalPrice"></span></h4>
+            </div>
+        </div>  
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
